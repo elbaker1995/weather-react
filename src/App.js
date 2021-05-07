@@ -1,12 +1,16 @@
 import "./App.css";
-import Weather from "./Weather";
+import CurrentCity from "./CurrentCity";
+import PopularCities from "./PopularCities";
+import Search from "./Search";
 
 function App() {
   return (
-    <div className="App">
-      <h1>Hello World</h1>
-      <Weather />
-      <i class="fab fa-instagram"></i>
+    <div className="weatherAppWrapper">
+      <div className="weatherApp">
+        <PopularCities />
+        <Search />
+        <CurrentCity />
+      </div>
     </div>
   );
 }

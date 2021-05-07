@@ -1,16 +1,31 @@
 import React from "react";
-import axios from "axios";
 
 export default function Weather() {
-  function handleSubmit(response) {
-    alert(
-      `The weather in New York is ${Math.round(response.data.main.temp)}°C`
-    );
-  }
+  return (
+    <div>
+      <h1>New York</h1>
+      <div className="col-4">
+        <div id="description">Cloudy</div>
+      </div>
+      <ul className="weatherConditons row">
+        <p>
+          <li className="temp col-5">
+            <i className="fas fa-thermometer-full subIcon temp col-1"></i>
+            <span id="temperature">16</span>
+            <span className="units">°C</span>
+          </li>
 
-  let apiKey = "0b21be4e9bb48bde61fa22f2bdf11c46";
-  let apiURL = `https://api.openweathermap.org/data/2.5/weather?q=New York&appid=${apiKey}&units=metric`;
+          <li className="weatherConditon col-4">
+            <i className="fas fa-wind subIcon wind"></i>
+            <span id="wind-speed">5</span>Km/h
+          </li>
 
-  axios.get(apiURL).then(handleSubmit);
-  return <h2>Hello from weather</h2>;
+          <li className="weatherConditon col-3">
+            <i className="fas fa-tint subIcon humidity"></i>
+            <span id="humidity">50</span>%
+          </li>
+        </p>
+      </ul>
+    </div>
+  );
 }
