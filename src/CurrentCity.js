@@ -4,7 +4,7 @@ import Weather from "./Weather";
 
 export default function CurrentTemperatureCard() {
   return (
-    <div className="card curentCity">
+    <div className="card currentCity">
       <div className="card-body row">
         <Time />
         <Weather />

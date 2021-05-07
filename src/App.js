@@ -5,11 +5,21 @@ import Search from "./Search";
 
 function App() {
   return (
-    <div className="weatherAppWrapper">
+    <div className="weatherAppWrapper fixed-top">
       <div className="weatherApp">
         <PopularCities />
         <Search />
-        <CurrentCity />
+        <div className="blurred-box">
+          <CurrentCity />
+        </div>
+        <a
+          href="https://github.com/elbaker1995/weather-react"
+          target="blank"
+          className="icon"
+        >
+          <i class="fab fa-github-square"></i>
+          Open-source code
+        </a>
       </div>
     </div>
   );
