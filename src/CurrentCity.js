@@ -7,7 +7,7 @@ export default function CurrentTemperatureCard() {
     <div className="card currentCity">
       <div className="card-body row">
         <Time />
-        <Weather />
+        <Weather defaultCity="New York" />
       </div>
     </div>
   );

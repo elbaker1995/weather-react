@@ -18,7 +18,7 @@ function App() {
             target="blank"
             className="icon"
           >
-            <i class="fab fa-github-square"></i>
+            <i className="fab fa-github-square"></i>
             Open-source code
           </a>
         </div>
