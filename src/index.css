@@ -9,17 +9,23 @@
 body {
   background: var(--primary-color);
   font-family: var(--default-font);
-  font-weight: 100;
-  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
 }
 
-h1 {
+.city {
   color: var(--primary-color);
   font-family: var(--seconday-font);
   font-weight: 900;
   font-size: 50px;
   line-height: 50px;
 }
+
+.main-elements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
 .weatherAppWrapper {
   background: url(./images/pinkclouds.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -134,7 +140,7 @@ li,
   top: -32px;
 }
 
-li {
+.weatherConditons li {
   display: inline;
   list-style: none;
   line-height: 10px;

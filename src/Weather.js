@@ -19,14 +19,12 @@ export default function Weather(props) {
   if (weatherData.ready) {
     return (
       <div>
-        <div className="row">
-          <h1 className="col-8">{weatherData.city}</h1>
-          <div className="col-4">
-            {/* <div>
-              <img src={weatherData.icon} alt={weatherData.description} />
-            </div> */}
-            <div id="description">{weatherData.description}</div>
-          </div>
+        <div className="main-elements">
+          <span className="city">{weatherData.city}</span>
+          <span>
+            {/* <img src="/" /> */}
+            <span id="description">{weatherData.description}</span>
+          </span>
         </div>
         <br />
         <ul className="weatherConditons row">

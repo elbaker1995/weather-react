@@ -7,12 +7,10 @@ function App() {
   return (
     <div className="container">
       <div className="weatherAppWrapper fixed-top">
-        <div className="weatherApp">
+        <div className="weatherApp fixed-top">
           <PopularCities />
           <Search />
-          <div className="blurred-box">
-            <CurrentCity />
-          </div>
+          <CurrentCity />
           <a
             href="https://github.com/elbaker1995/weather-react"
             target="blank"
