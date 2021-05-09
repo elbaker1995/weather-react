@@ -1,7 +1,7 @@
 import "./App.css";
-import CurrentCity from "./CurrentCity";
 import PopularCities from "./PopularCities";
 import Search from "./Search";
+import Weather from "./Weather";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         <div className="weatherApp fixed-top">
           <PopularCities />
           <Search />
-          <CurrentCity />
+          <Weather defaultCity="New York" />
           <a
             href="https://github.com/elbaker1995/weather-react"
             target="blank"
