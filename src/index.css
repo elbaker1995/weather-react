@@ -19,6 +19,7 @@ body {
   font-weight: 900;
   font-size: 50px;
   line-height: 50px;
+  margin-top: 50px;
 }
 
 .main-elements {
@@ -51,7 +52,6 @@ body {
 }
 
 li,
-.description,
 .PopularCities {
   color: var(--text-color);
 }
@@ -140,10 +140,12 @@ li,
   top: -32px;
 }
 
-.weatherConditons li {
-  display: inline;
+.weatherConditons li,
+.description li {
+  /* display: inline; */
   list-style: none;
   line-height: 10px;
+  margin: auto;
 }
 
 .time,
