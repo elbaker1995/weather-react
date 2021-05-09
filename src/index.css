@@ -142,7 +142,6 @@ li,
 
 .weatherConditons li,
 .description li {
-  /* display: inline; */
   list-style: none;
   line-height: 10px;
   margin: auto;
@@ -152,6 +151,12 @@ li,
 .weatherConditons,
 h1 {
   text-align: left;
+}
+
+.tempIcon {
+  color: var(--text-color);
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 
 .weatherConditon {
