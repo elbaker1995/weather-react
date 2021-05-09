@@ -1,6 +1,4 @@
 export default function FormattedDate(props) {
-  console.log(props.date);
-
   let hours = props.date.getHours();
   if (hours < 10) {
     hours = `0${hours}`;
