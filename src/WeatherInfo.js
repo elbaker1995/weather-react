@@ -13,7 +13,7 @@ export default function WeatherInfo(props) {
         <span className="city">{props.data.city}</span>
         <ul className="description">
           <li>
-            <WeatherIcon code={props.data.icon} />
+            <WeatherIcon code={props.data.icon} size={60} />
           </li>
           <li id="description">{props.data.description}</li>
         </ul>
