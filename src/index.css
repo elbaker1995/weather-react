@@ -52,12 +52,9 @@ body {
   text-align: center;
 }
 
-.dailyForecast li {
-  text-decoration: none;
-}
-
 li,
-.PopularCities {
+.PopularCities,
+.dailyForecast {
   color: var(--text-color);
 }
 
@@ -146,16 +143,10 @@ li,
 }
 
 .weatherConditons li,
-.description li,
-.dailyForecast li {
+.description li {
   list-style: none;
   line-height: 10px;
   margin: auto;
-}
-
-.dailyForecast li {
-  justify-content: space-between;
-  padding: 3px 0;
 }
 
 .time,
