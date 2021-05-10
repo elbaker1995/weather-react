@@ -17,6 +17,7 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].description,
       icon: response.data.weather[0].icon,
+      coordinates: response.data.coord,
     });
   }
 
@@ -51,7 +52,7 @@ export default function Weather(props) {
           </button>
         </form>
         <WeatherInfo data={weatherData} />
-        <DailyForecast />
+        <DailyForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {

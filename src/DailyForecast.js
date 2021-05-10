@@ -1,21 +1,29 @@
-import React from "react";
-import WeatherIcon from "./WeatherIcon";
+import React, { useState } from "react";
+import axios from "axios";
+import DailyForecastDay from "./DailyForecastDay";
 
-export default function DailyForecast() {
-  return (
-    <div className="dailyForecast">
-      <div className="row">
-        <ul className="col">
-          <li className="dailyForecast-day">THU</li>
-          <li className="dailyForecast-icon">
-            <WeatherIcon code="01d" size={40} />
-          </li>
-          <li className="dailyForecast-temp">
-            <span className="dailyForecast-Max">19°</span>
-            <span className="dailyForecast-Min"> 15°</span>
-          </li>
-        </ul>
+export default function DailyForecast(props) {
+  let [loaded, setLoaded] = useState(false);
+  let [forecast, setForecast] = useState(null);
+
+  function handleResponse(response) {
+    setForecast(response.data.daily);
+    setLoaded(true);
+  }
+
+  if (loaded) {
+    return (
+      <div className="dailyForecast">
+        <div className="row">
+          <DailyForecastDay data={forecast[0]} />
+        </div>
       </div>
-    </div>
-  );
+    );
+  } else {
+    let longitude = props.coordinates.lon;
+    let latitude = props.coordinates.lat;
+    let apiURL = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=0b21be4e9bb48bde61fa22f2bdf11c46&units=metric`;
+    axios.get(apiURL).then(handleResponse);
+    return null;
+  }
 }
