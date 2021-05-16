@@ -1,4 +1,5 @@
 import React from "react";
+import "./popularCities.css";
 
 export default function PopularCities() {
   return (

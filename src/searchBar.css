@@ -1,0 +1,30 @@
+#search-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+#search-form #search-bar {
+  width: 75%;
+}
+
+#search-form ::placeholder {
+  color: var(--primary-color);
+}
+
+#search-form .goButton,
+#search-form #search-bar,
+#search-form #current-location {
+  font-size: 18px;
+  padding: 3px 5px;
+  text-transform: uppercase;
+  background-color: #fff6ec4f;
+  border: 1px solid transparent;
+  color: var(--primary-color);
+}
+
+#search-form .goButton:hover,
+#search-form #current-location:hover {
+  background-color: var(--secondary-color);
+  border: 1px solid var(--primary-color);
+  color: var(--primary-color);
+}

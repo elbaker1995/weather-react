@@ -1,0 +1,80 @@
+.currentCity {
+  background: #fff6ec4f;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  max-width: 500px;
+  margin: 7px 0;
+  text-align: center;
+}
+
+.currentCity-time {
+  color: var(--text-color);
+  font-size: 30px;
+  font-weight: 100;
+  line-height: 40px;
+}
+
+.currentCity-city {
+  color: var(--primary-color);
+  font-family: var(--seconday-font);
+  font-weight: 900;
+  font-size: 50px;
+  line-height: 50px;
+  margin-top: 50px;
+  text-align: left;
+}
+
+.currentCity-mainElements {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.currentCity-descriptionElement li {
+  list-style: none;
+  margin: auto;
+  color: var(--text-color);
+  font-size: 20px;
+  font-weight: 100;
+  line-height: 20px;
+  text-transform: capitalize;
+}
+
+.currentCity-weatherConditons {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  line-height: 10px;
+  margin: auto;
+  text-align: left;
+}
+
+.currentCity-weatherConditons #temperature {
+  color: var(--text-color);
+  font-size: 60px;
+  font-weight: 100;
+}
+
+.currentCity-weatherConditons .units {
+  color: var(--text-color);
+  position: relative;
+  font-size: 20px;
+  font-weight: normal;
+  top: -32px;
+}
+
+.currentCity-weatherConditons .tempIcon {
+  color: var(--text-color);
+  font-size: 40px;
+  margin-bottom: 20px;
+}
+
+.currentCity-conditon {
+  color: var(--text-color);
+  font-size: 24px;
+  font-weight: 100;
+}
+
+.wind-speed-units,
+.humidity-units {
+  font-size: 16px;
+}

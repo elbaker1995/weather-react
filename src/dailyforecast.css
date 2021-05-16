@@ -1,0 +1,19 @@
+.dailyForecast {
+  background: #fff6ec4f;
+  border: 1px solid transparent;
+  border-radius: 0px;
+  max-width: 500px;
+  margin: 7px 0;
+  text-align: center;
+  color: var(--text-color);
+  font-size: 16px;
+}
+
+.dailyForecast-Max {
+  font-weight: 400;
+}
+
+.dailyForecast-Min {
+  margin-left: 5px;
+  font-weight: 100;
+}

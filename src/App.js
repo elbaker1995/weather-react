@@ -1,4 +1,5 @@
 import "./App.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import PopularCities from "./PopularCities";
 // import Search from "./Search";
 import Weather from "./Weather";

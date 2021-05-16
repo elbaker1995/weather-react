@@ -1,0 +1,24 @@
+.weatherAppWrapper {
+  background: url(./images/pinkclouds.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  padding-bottom: 800px;
+}
+
+.weatherApp {
+  margin: 20px auto;
+  border: 1px solid transparent;
+  max-width: 500px;
+}
+
+.icon {
+  font-size: 16px;
+  text-decoration: none;
+  font-weight: 100;
+  background-color: #fff6ec4f;
+  border: 1px solid transparent;
+  color: var(--text-color);
+  text-transform: uppercase;
+}

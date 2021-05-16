@@ -1,0 +1,23 @@
+.PopularCities {
+  display: flex;
+  justify-content: space-between;
+  font-size: 20px;
+  margin-bottom: 7px;
+}
+
+.PopularCities #sydney,
+.PopularCities #tokyo,
+.PopularCities #london {
+  background-color: #fff6ec4f;
+  border: 1px solid transparent;
+  color: var(--text-color);
+  text-transform: uppercase;
+  font-family: var(--seconday-font);
+  font-weight: 400;
+}
+
+.PopularCities #sydney:hover,
+.PopularCities #tokyo:hover,
+.PopularCities #london:hover {
+  color: var(--primary-color);
+}
