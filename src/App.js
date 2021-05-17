@@ -1,6 +1,6 @@
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import PopularCities from "./PopularCities";
+// import PopularCities from "./PopularCities";
 // import Search from "./Search";
 import Weather from "./Weather";
 
@@ -9,7 +9,7 @@ function App() {
     <div className="container">
       <div className="weatherAppWrapper fixed-top">
         <div className="weatherApp fixed-top">
-          <PopularCities />
+          {/* <PopularCities /> */}
           <Weather defaultCity="New York" />
           <a
             href="https://github.com/elbaker1995/weather-react"

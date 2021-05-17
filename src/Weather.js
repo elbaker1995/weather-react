@@ -3,6 +3,7 @@ import axios from "axios";
 import WeatherInfo from "./WeatherInfo";
 import DailyForecast from "./DailyForecast";
 import "./searchBar.css";
+import "./popularCities.css";
 
 export default function Weather(props) {
   const [weatherData, setWeatherData] = useState({ ready: false });
@@ -36,9 +37,44 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
+  function handleCityChangeSydney() {
+    setCity("sydney");
+    search();
+  }
+
+  function handleCityChangeTokyo() {
+    setCity("Tokyo");
+    search();
+  }
+
+  function handleCityChangeLondon() {
+    setCity("London");
+    search();
+  }
+
   if (weatherData.ready) {
     return (
       <div>
+        <div className="PopularCities">
+          <div className="sydney">
+            <button id="sydney" onClick={handleCityChangeSydney}>
+              <i className="fas fa-globe-asia"></i> SYD{" "}
+              <span id="syd-temp"></span>°
+            </button>
+          </div>
+          <div className="tokyo">
+            <button id="tokyo" onClick={handleCityChangeTokyo}>
+              <i className="fas fa-globe-asia"></i> TYO{" "}
+              <span id="tyo-temp"></span>°
+            </button>
+          </div>
+          <div className="london">
+            <button id="london" onClick={handleCityChangeLondon}>
+              <i className="fas fa-globe-europe"></i> LND{" "}
+              <span id="lnd-temp"></span>°
+            </button>
+          </div>
+        </div>
         <form id="search-form" onSubmit={handleSubmit}>
           <input
             type="search"
