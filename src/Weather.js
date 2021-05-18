@@ -37,19 +37,31 @@ export default function Weather(props) {
     setCity(event.target.value);
   }
 
-  function handleCityChangeSydney() {
+  function handleCityChangeSydney(event) {
+    event.preventDefault();
     setCity("sydney");
     search();
   }
 
-  function handleCityChangeTokyo() {
+  function handleCityChangeTokyo(event) {
+    event.preventDefault();
     setCity("Tokyo");
     search();
   }
 
-  function handleCityChangeLondon() {
+  function handleCityChangeLondon(event) {
+    event.preventDefault();
     setCity("London");
     search();
+  }
+  function searchCurrentlocation(position) {
+    let apiURL = `https://api.openweathermap.org/data/2.5/weather?lat=${position.coords.latitude}&lon=${position.coords.longitude}&appid=0b21be4e9bb48bde61fa22f2bdf11c46&units=metric`;
+    axios.get(apiURL).then(handleResponse);
+  }
+
+  function getCurrentLocation(event) {
+    event.preventDefault();
+    navigator.geolocation.getCurrentPosition(searchCurrentlocation);
   }
 
   if (weatherData.ready) {
@@ -84,7 +96,7 @@ export default function Weather(props) {
             onChange={handleCityChange}
           />
           <input className="goButton" type="submit" value="search" />
-          <button id="current-location">
+          <button id="current-location" onClick={getCurrentLocation}>
             <i className="fas fa-map-marker-alt"></i>
           </button>
         </form>
