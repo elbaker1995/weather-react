@@ -71,19 +71,19 @@ export default function Weather(props) {
           <div className="sydney">
             <button id="sydney" onClick={handleCityChangeSydney}>
               <i className="fas fa-globe-asia"></i> SYD{" "}
-              <span id="syd-temp"></span>°
+              <span id="syd-temp"></span>
             </button>
           </div>
           <div className="tokyo">
             <button id="tokyo" onClick={handleCityChangeTokyo}>
               <i className="fas fa-globe-asia"></i> TYO{" "}
-              <span id="tyo-temp"></span>°
+              <span id="tyo-temp"></span>
             </button>
           </div>
           <div className="london">
             <button id="london" onClick={handleCityChangeLondon}>
               <i className="fas fa-globe-europe"></i> LND{" "}
-              <span id="lnd-temp"></span>°
+              <span id="lnd-temp"></span>
             </button>
           </div>
         </div>

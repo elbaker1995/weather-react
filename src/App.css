@@ -13,12 +13,23 @@
   max-width: 500px;
 }
 
-.icon {
+footer {
   font-size: 16px;
-  text-decoration: none;
   font-weight: 100;
+  color: white;
   background-color: #fff6ec4f;
   border: 1px solid transparent;
-  color: var(--text-color);
+  text-align: center;
   text-transform: uppercase;
+}
+
+footer a {
+  color: white;
+  text-decoration: none;
+  margin: 2px;
+}
+
+footer a:hover {
+  text-decoration: none;
+  color: #434e54;
 }
