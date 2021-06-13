@@ -3,7 +3,8 @@
   border: 1px solid transparent;
   border-radius: 0px;
   max-width: 500px;
-  margin: 7px 0;
+  margin: 10px 0;
+  padding: 20px;
   text-align: center;
 }
 
@@ -52,14 +53,6 @@
   color: var(--text-color);
   font-size: 60px;
   font-weight: 100;
-}
-
-.currentCity-weatherConditons .units {
-  color: var(--text-color);
-  position: relative;
-  font-size: 20px;
-  font-weight: normal;
-  top: -32px;
 }
 
 .currentCity-weatherConditons .tempIcon {
